@@ -1,0 +1,8 @@
+.social-icon a {
+  color: white; /* Set the icon color to white */
+  transition: color 0.3s ease; /* Optional: Add a transition for smooth color change */
+}
+
+.social-icon a:hover {
+  color: white; /* Ensure the color remains white on hover */
+}

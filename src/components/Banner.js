@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import headerImg from "../assets/img/nikita photo.jpeg";
 import { ArrowRightCircle } from "react-bootstrap-icons";
-import "animate.css";
+// import "animate.css";
 import TrackVisibility from "react-on-screen";
 
 export const Banner = () => {
@@ -70,9 +70,7 @@ export const Banner = () => {
                       className="txt-rotate"
                       dataPeriod="1000"
                       data-rotate='[ "Full Stack Developer" ]'
-                    >
-                      <span className="wrap">{text}</span>
-                    </span>
+                    ></span>
                   </h1>
                   <p>
                     Lorem Ipsum is simply dummy text of the printing and
@@ -88,18 +86,18 @@ export const Banner = () => {
               )}
             </TrackVisibility>
           </Col>
-          <Col xs={10} md={6} xl={5}>
+          <Col xs={0} md={0} xl={0}>
             <TrackVisibility>
               {({ isVisible }) => (
-                <div
-                  className={
-                    isVisible ? "animate__animated animate__zoomOut" : ""
-                  }
-                >
+                <div>
                   <img
                     src={headerImg}
                     alt="Header Img"
-                    style={{ borderRadius: "60%" }}
+                    style={{
+                      width: "50%",
+                      height: "auto",
+                      marginLeft: "200px",
+                    }} // Added a border for visibility
                   />
                 </div>
               )}

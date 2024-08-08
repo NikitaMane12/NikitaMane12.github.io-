@@ -47,21 +47,6 @@ export const Projects = () => {
                     type specimen book.
                   </p>
                   <Tab.Container id="projects-tabs" defaultActiveKey="first">
-                    <Nav
-                      variant="pills"
-                      className="nav-pills mb-5 justify-content-center align-items-center"
-                      id="pills-tab"
-                    >
-                      <Nav.Item>
-                        <Nav.Link eventKey="first">Tab 1</Nav.Link>
-                      </Nav.Item>
-                      <Nav.Item>
-                        <Nav.Link eventKey="second">Tab 2</Nav.Link>
-                      </Nav.Item>
-                      <Nav.Item>
-                        <Nav.Link eventKey="third">Tab 3</Nav.Link>
-                      </Nav.Item>
-                    </Nav>
                     <Tab.Content
                       id="slideInUp"
                       className={
