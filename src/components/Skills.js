@@ -1,74 +1,78 @@
 import React from "react";
-import meter1 from "../assets/img/meter1.svg";
-import meter2 from "../assets/img/meter2.svg";
-import meter3 from "../assets/img/meter3.svg";
-import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
-import colorSharp from "../assets/img/color-sharp.png";
+import "./skill.css";
+import html from "../assets/img/html1.png";
+import css from "../assets/img/css.png";
+import js from "../assets/img/js.png";
+import node from "../assets/img/nodeJs.jpg";
+import express from "../assets/img/expressJS.png";
+import MongoDB from "../assets/img/mongodb.png";
+import npm from "../assets/img/npm.png";
+import github from "../assets/img/github.png";
+import vscode from "../assets/img/vscode.png";
 
 export const Skills = () => {
-  const responsive = {
-    superLargeDesktop: {
-      breakpoint: { max: 4000, min: 3000 },
-      items: 5,
-    },
-    desktop: {
-      breakpoint: { max: 3000, min: 1024 },
-      items: 3,
-    },
-    tablet: {
-      breakpoint: { max: 1024, min: 464 },
-      items: 2,
-    },
-    mobile: {
-      breakpoint: { max: 464, min: 0 },
-      items: 1,
-    },
-  };
-
   return (
-    <section className="skill" id="skills">
-      <div className="container">
-        <div className="row">
-          <div className="col-12">
-            <div className="skill-bx wow zoomIn">
-              <h2>Skills</h2>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry.<br></br> Lorem Ipsum has been the industry's standard
-                dummy text.
-              </p>
-              <Carousel
-                responsive={responsive}
-                infinite={true}
-                className="skill-slider"
-              >
-                <div className="item">
-                  <img src={meter1} alt="Html css" />
-                  <h5>Html & CSS</h5>
-                </div>
-                <div className="item">
-                  <img src={meter2} alt="React" />
-                  <h5>React</h5>
-                </div>
-                <div className="item">
-                  <img src={meter3} alt="Node" />
-                  <h5>Node.js</h5>
-                </div>
-                <div className="item">
-                  <img src={meter1} alt="Web Development" />
-                  <h5>Web Development</h5>
-                </div>
-              </Carousel>
-            </div>
-          </div>
+    <section id="skills">
+      <div className="heading">
+        <h2>Skills</h2>
+        <span>Tech Stack & Tools</span>
+      </div>
+
+      <div className="skills-content">
+        <div className="skills-card">
+          <img className="skills-card-img" src={html} alt="HTML" />
+          <h4 className="skills-card-name">HTML</h4>
+        </div>
+
+        <div className="skills-card">
+          <img className="skills-card-img" src={css} alt="CSS" />
+          <h4 className="skills-card-name">CSS</h4>
+        </div>
+
+        <div className="skills-card">
+          <img className="skills-card-img" src={js} alt="JavaScript" />
+          <h4 className="skills-card-name">JavaScript</h4>
+        </div>
+
+        <div className="skills-card">
+          <img className="skills-card-img" src={MongoDB} alt="MongoDB" />
+          <h4 className="skills-card-name">MongoDB</h4>
+        </div>
+
+        <div className="skills-card">
+          <img className="skills-card-img" src={express} alt="Express.js" />
+          <h4 className="skills-card-name">Express.js</h4>
+        </div>
+
+        <div className="skills-card">
+          <img className="skills-card-img" src={npm} alt="npm" />
+          <h4 className="skills-card-name">npm</h4>
+        </div>
+
+        <div className="skills-card">
+          <img className="skills-card-img" src={node} alt="Node.js" />
+          <h4 className="skills-card-name">Node.js</h4>
+        </div>
+
+        <div className="skills-card">
+          <img className="skills-card-img" src={github} alt="GitHub" />
+          <h4 className="skills-card-name">GitHub</h4>
+        </div>
+
+        <div className="skills-card">
+          <img className="skills-card-img" src={vscode} alt="VS Code" />
+          <h4 className="skills-card-name">VS Code</h4>
+        </div>
+
+        <div className="skills-card">
+          <img
+            className="skills-card-img"
+            src="https://tse1.mm.bing.net/th?id=OIP.JCGGgssMIuUrZFU3I6jv0AHaHC&pid=Api&P=0&h=180"
+            alt="React"
+          />
+          <h4 className="skills-card-name">React</h4>
         </div>
       </div>
-      <img
-        className="background-image-left"
-        src={colorSharp}
-        alt="background"
-      />
     </section>
   );
 };
