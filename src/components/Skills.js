@@ -7,7 +7,7 @@ import node from "../assets/img/nodeJs.jpg";
 import express from "../assets/img/expressJS.png";
 import MongoDB from "../assets/img/mongodb.png";
 import npm from "../assets/img/npm.png";
-import github from "../assets/img/github.png";
+
 import vscode from "../assets/img/vscode.png";
 
 export const Skills = () => {
@@ -52,11 +52,6 @@ export const Skills = () => {
         <div className="skills-card">
           <img className="skills-card-img" src={node} alt="Node.js" />
           <h4 className="skills-card-name">Node.js</h4>
-        </div>
-
-        <div className="skills-card">
-          <img className="skills-card-img" src={github} alt="GitHub" />
-          <h4 className="skills-card-name">GitHub</h4>
         </div>
 
         <div className="skills-card">

@@ -10,8 +10,6 @@ import html from "../assets/img/html1.png";
 import css from "../assets/img/css.png";
 import js from "../assets/img/js.png";
 import node from "../assets/img/nodeJs.jpg";
-import Express from "../assets/img/expressJS.png";
-import MongoDB from "../assets/img/mongodb.png";
 
 export const Projects = () => {
   const projectData = [
@@ -62,8 +60,7 @@ export const Projects = () => {
         { image: css, name: "CSS" },
         { image: js, name: "JS" },
         { image: node, name: "NodeJs" },
-        { image: Express, name: "Express" },
-        { image: MongoDB, name: "MongoDB" },
+
         {
           image:
             "https://pluspng.com/img-png/react-logo-png-javascript-logo-react-js-stickers-mugs-t-shirts-and-much-more-880x1136.jpg",

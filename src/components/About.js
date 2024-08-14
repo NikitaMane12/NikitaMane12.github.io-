@@ -19,12 +19,11 @@ const AboutMe = () => {
             Developer, passionate about building digital products that improve
             the everyday experience for people.
             <br />
-            <br />I am a Quick learner and an aspiring full-stack web developer
-            with core knowledge of Full stack technology and working with tech
-            stacks like HTML, CSS, Javascript, Node Js, MongoDB, Express, etc.,
-            and passionate about developing user-friendly web applications.
-            Looking forward to applying and enhancing my skills and knowledge as
-            a developer.
+            <br />I am a quick learner with core knowledge of Full stack
+            technology and working with tech stacks like HTML, CSS, Javascript,
+            Node Js, MongoDB, Express, etc., and passionate about developing
+            user-friendly web applications. Looking forward to applying and
+            enhancing my skills and knowledge as a developer.
           </p>
           <br />
 
@@ -36,26 +35,26 @@ const AboutMe = () => {
 
             <div className="info-box">
               <i className="bx bxs-phone"></i>
+              <span>Mobile Number</span> -
               <span id="contact-phone">+91 8380806370</span>
             </div>
 
             <div className="info-box">
               <i className="bx bxs-envelope"></i>
+              <span>E-Mail</span> -
               <span id="contact-email">manenikita2212@gmail.com</span>
             </div>
           </div>
 
-          <li>
-            <a
-              id="resume-link"
-              href="https://drive.google.com/uc?export=download&id=1YMsbV8rdDV5ybhBnDVxmSju3-em2G_zF"
-              download="Nikita_Mane_Resume.pdf"
-            >
-              <button className="resume-button" id="resume-button">
-                Resume
-              </button>
-            </a>
-          </li>
+          <a
+            id="resume-link"
+            href="https://drive.google.com/uc?export=download&id=1YMsbV8rdDV5ybhBnDVxmSju3-em2G_zF"
+            download="Nikita_Mane_Resume.pdf"
+          >
+            <button className="resume-button" id="resume-button">
+              Resume
+            </button>
+          </a>
         </div>
       </div>
     </section>
