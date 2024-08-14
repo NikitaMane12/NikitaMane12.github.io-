@@ -48,10 +48,8 @@ const AboutMe = () => {
           <li>
             <a
               id="resume-link"
-              href="https://drive.google.com/file/d/1YMsbV8rdDV5ybhBnDVxmSju3-em2G_zF/view?usp=sharing"
-              download="Nikita"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="https://drive.google.com/uc?export=download&id=1YMsbV8rdDV5ybhBnDVxmSju3-em2G_zF"
+              download="Nikita_Mane_Resume.pdf"
             >
               <button className="resume-button" id="resume-button">
                 Resume
