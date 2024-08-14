@@ -1,8 +1,131 @@
 .social-icon a {
-  color: white; /* Set the icon color to white */
-  transition: color 0.3s ease; /* Optional: Add a transition for smooth color change */
+  color: white;
+  transition: color 0.3s ease;
 }
 
 .social-icon a:hover {
-  color: white; /* Ensure the color remains white on hover */
+  color: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 75px;
+}
+
+body {
+  font-weight: 400;
+  overflow-x: hidden;
+  position: relative;
+  background-color: #121212;
+  color: #fff;
+  font-family: "Centra", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #fff;
+  font-family: "Centra Medium", sans-serif;
+  font-weight: 500;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: transparent;
+  padding: 20px 0;
+  transition: background-color 0.3s;
+}
+
+.navbar.scrolled {
+  background-color: #000;
+  padding: 10px 0;
+}
+
+.navbar-brand h1 {
+  font-size: 28px;
+  color: #fff;
+  font-family: "Centra Bold", sans-serif;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%28%255,%255,%255,1%29' stroke-width='2' linecap='round' linejoin='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Nav Links */
+.navbar-link {
+  margin: 0 10px;
+  color: #aaa;
+  font-size: 16px;
+  text-transform: uppercase;
+  transition: color 0.3s;
+}
+
+.navbar-link:hover,
+.navbar-link.active {
+  color: #fff;
+}
+
+/* Social Icons */
+.social-icon a {
+  margin: 0 5px;
+}
+
+.social-icon svg {
+  fill: #aaa;
+  transition: fill 0.3s;
+}
+
+.social-icon a:hover svg {
+  fill: #fff;
+}
+
+/* Button */
+.vvd button {
+  background: linear-gradient(90deg, #ff8a00, #e52e71);
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 30px;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.vvd button:hover {
+  background: linear-gradient(90deg, #e52e71, #ff8a00);
+}
+
+@media (max-width: 200px) {
+  .navbar-toggler {
+    margin-left: auto;
+  }
+
+  .navbar-collapse {
+    background-color: #000;
+    padding: 15px;
+  }
+
+  .navbar-link {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .navbar-text {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .vvd button {
+    width: 100%;
+  }
 }

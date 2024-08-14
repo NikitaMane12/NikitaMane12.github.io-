@@ -17,62 +17,83 @@
 
 /************ Default Css ************/
 /************ Mobile View ************/
-@media (max-width: 768px) {
+/* Mobile Styles */
+@media (max-width: 300px) {
   nav.navbar {
     padding: 10px 0;
   }
+
   nav.navbar .navbar-nav .nav-link.navbar-link {
     font-size: 16px;
     padding: 0 15px;
   }
+
   .banner {
     padding: 180px 0 60px 0; /* Adjusted padding for mobile view */
+    text-align: center; /* Center text for mobile */
   }
+
   .banner h1 {
-    font-size: 36px; /* Smaller font size for h1 */
+    font-size: 28px; /* Smaller font size for h1 */
   }
+
   .banner p {
-    font-size: 16px; /* Smaller font size for paragraphs */
+    font-size: 14px; /* Smaller font size for paragraphs */
     width: 90%; /* Width adjusted for mobile */
   }
+
   .banner button {
-    font-size: 18px; /* Smaller button text */
+    font-size: 16px; /* Smaller button text */
     margin-top: 30px; /* Adjust margin for mobile */
   }
+
   .skill h2,
   .project h2,
   .contact h2 {
-    font-size: 36px; /* Smaller heading size for sections */
+    font-size: 28px; /* Smaller heading size for sections */
   }
+
   .skill p,
   .project p,
   .contact p {
-    font-size: 16px; /* Smaller paragraph size */
+    font-size: 14px; /* Smaller paragraph size */
     width: 90%; /* Width adjusted for mobile */
   }
+
   .project .nav.nav-pills {
     width: 100%; /* Full width for navigation pills */
   }
+
   .project .nav.nav-pills .nav-item {
     width: 100%; /* Stack nav items vertically */
   }
+
   .contact form input,
   .contact form textarea {
-    font-size: 16px; /* Smaller font size for inputs */
-    padding: 15px; /* Adjusted padding */
+    font-size: 14px; /* Smaller font size for inputs */
+    padding: 12px; /* Adjusted padding */
+    width: 100%; /* Full width for inputs */
+    margin-bottom: 15px; /* Space between inputs */
   }
+
   .contact form button {
-    font-size: 16px; /* Smaller button text */
-    padding: 12px 24px; /* Adjusted padding */
+    font-size: 14px; /* Smaller button text */
+    padding: 10px 20px; /* Adjusted padding */
   }
+
   .footer {
-    padding: 30px 0; /* Reduced padding for footer */
+    padding: 20px 0; /* Reduced padding for footer */
+    text-align: center; /* Center footer text */
   }
+
   .footer img {
     width: 100%; /* Make footer image responsive */
+    max-width: 150px; /* Limit max width of footer image */
+    height: auto;
   }
 }
 
+/* Global Styles */
 * {
   margin: 0;
   padding: 0;
@@ -135,6 +156,7 @@ select:focus {
   outline: none;
 }
 
+/* Large Screen Styles */
 @media (min-width: 1700px) {
   main .container {
     max-width: 100%;
@@ -142,6 +164,7 @@ select:focus {
   }
 }
 
+/* Success and Danger Messages */
 p.success {
   color: green;
 }
@@ -149,6 +172,7 @@ p.success {
 p.danger {
   color: red;
 }
+
 /************ Navbar Css ************/
 nav.navbar {
   padding: 18px 0;
