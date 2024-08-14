@@ -1,9 +1,9 @@
+import React from "react";
 import meter1 from "../assets/img/meter1.svg";
 import meter2 from "../assets/img/meter2.svg";
 import meter3 from "../assets/img/meter3.svg";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-
 import colorSharp from "../assets/img/color-sharp.png";
 
 export const Skills = () => {
@@ -41,11 +41,11 @@ export const Skills = () => {
               <Carousel
                 responsive={responsive}
                 infinite={true}
-                className="skill-slider" // Updated className
+                className="skill-slider"
               >
                 <div className="item">
                   <img src={meter1} alt="Html css" />
-                  <h5>Html css</h5>
+                  <h5>Html & CSS</h5>
                 </div>
                 <div className="item">
                   <img src={meter2} alt="React" />
@@ -53,7 +53,7 @@ export const Skills = () => {
                 </div>
                 <div className="item">
                   <img src={meter3} alt="Node" />
-                  <h5>Node</h5>
+                  <h5>Node.js</h5>
                 </div>
                 <div className="item">
                   <img src={meter1} alt="Web Development" />

@@ -1,91 +1,127 @@
-import { Container, Row, Col, Tab } from "react-bootstrap";
-import { ProjectCard } from "./ProjectCard";
-
-import projImg1 from "../assets/img/projectimg1.png";
-import projImg2 from "../assets/img/img2.png";
-import projImg3 from "../assets/img/project3.png";
-import "animate.css";
-import TrackVisibility from "react-on-screen";
+import ProjectCard from "./ProjectCard";
+import "./project.css";
+import Zee5 from "../assets/img/zee5.png";
+import speedUp from "../assets/img/speedUp.png";
+import basket from "../assets/img/basket.png";
+import EventImage from "../assets/img/event.png";
+import ConvexTechImage from "../assets/img/convtech.png";
+import WeatherAppImage from "../assets/img/whetr app.png";
+import html from "../assets/img/html1.png";
+import css from "../assets/img/css.png";
+import js from "../assets/img/js.png";
+import node from "../assets/img/nodeJs.jpg";
+import Express from "../assets/img/expressJS.png";
+import MongoDB from "../assets/img/mongodb.png";
 
 export const Projects = () => {
-  const projects = [
+  const projectData = [
     {
-      title: "Heven Basket",
-      description: "Design & Development",
-      imgUrl: projImg1,
+      image: Zee5,
+      title: "ZEE5",
+      description: `About Zee5 App -->Watch premieres of your favorite TV show episodes a day before telecast on ZEE5 -->Features Landing Page | Login, signup, and user profile | Video page | Buy Plan --> Tech-Stack HTML | CSS | JavaScript| JSON`,
+      techStack: [
+        { image: html, name: "HTML" },
+        { image: css, name: "CSS" },
+      ],
+      liveLink: "https://zee5-hazel.vercel.app/",
+      githubLink: "https://github.com/NikitaMane12/zee5",
     },
     {
-      title: "Spped Up",
-      description: "Design & Development",
-      imgUrl: projImg2,
+      image: speedUp,
+      title: "Speed UP",
+      description:
+        "The SPEEDUP Website is a platform designed to provide information and resources for users interested in electric transportation solutions.",
+      techStack: [
+        { image: html, name: "HTML" },
+        { image: css, name: "CSS" },
+        { image: js, name: "JS" },
+      ],
+      liveLink: "https://main--resilient-rolypoly-c33690.netlify.app/",
+      githubLink: "https://github.com/NikitaMane12/SpeedUp",
     },
     {
-      title: "convextech",
-      description: "Design & Development",
-      imgUrl: projImg3,
+      image: basket,
+      title: "Basket-Haven",
+      description: `Bigbasket is one of India's leading online grocery stores, offering a wide range of products including fresh fruits and vegetables, groceries, household essentials, and gourmet items. Competitive prices, and reliable delivery service, making it a popular choice for busy urban consumers looking for a convenient way to shop for groceries online.`,
+      techStack: [
+        { image: html, name: "HTML" },
+        { image: css, name: "CSS" },
+        { image: js, name: "JS" },
+      ],
+      liveLink:
+        "https://66405eedbcb7ce8c1a800ea6--timely-froyo-5c39a1.netlify.app/",
+      githubLink: "https://github.com/NikitaMane12/Basket-Heaven",
+    },
+    {
+      image: EventImage,
+      title: "Event-Delight",
+      description:
+        "Event Delight is a website designed for event planners and ticket booking. It helps organizers plan events and allows attendees to purchase tickets easily.",
+      techStack: [
+        { image: html, name: "HTML" },
+        { image: css, name: "CSS" },
+        { image: js, name: "JS" },
+        { image: node, name: "NodeJs" },
+        { image: Express, name: "Express" },
+        { image: MongoDB, name: "MongoDB" },
+        {
+          image:
+            "https://pluspng.com/img-png/react-logo-png-javascript-logo-react-js-stickers-mugs-t-shirts-and-much-more-880x1136.jpg",
+          name: "React",
+        },
+      ],
+      liveLink: "https://event-delight-uqcy.vercel.app/",
+      githubLink: "https://github.com/NikitaMane12/Event-Delight",
+    },
+    {
+      image: ConvexTechImage,
+      title: "ConvexTech",
+      description:
+        "ConvexTech Inc. is a global specialist in staffing, recruiting, and consulting across IT, non-IT, engineering, and healthcare sectors, with a strong foothold in software development.",
+      techStack: [
+        { image: html, name: "HTML" },
+        { image: css, name: "CSS" },
+        { image: js, name: "JS" },
+        {
+          image:
+            "https://pluspng.com/img-png/react-logo-png-javascript-logo-react-js-stickers-mugs-t-shirts-and-much-more-880x1136.jpg",
+          name: "React",
+        },
+      ],
+      liveLink:
+        "https://667059a45686ac00927c9621--delicate-maamoul-04d99a.netlify.app/Home",
+      githubLink: "https://github.com/NikitaMane12/eBay-Egale",
+    },
+    {
+      image: WeatherAppImage,
+      title: "Weather App",
+      description:
+        "About Weather App --> User can search city --> where user will get weather information and map of that city.",
+      techStack: [
+        { image: html, name: "HTML" },
+        { image: css, name: "CSS" },
+
+        {
+          image:
+            "https://pluspng.com/img-png/react-logo-png-javascript-logo-react-js-stickers-mugs-t-shirts-and-much-more-880x1136.jpg",
+          name: "React",
+        },
+      ],
+      liveLink: "https://w1-six-chi.vercel.app/",
+      githubLink: "https://github.com/NikitaMane12/whather-app",
     },
   ];
 
   return (
-    <section className="project" id="projects">
-      <Container>
-        <Row>
-          <Col size={12}>
-            <TrackVisibility>
-              {({ isVisible }) => (
-                <div
-                  className={
-                    isVisible ? "animate__animated animate__fadeIn" : ""
-                  }
-                >
-                  <h2>Projects</h2>
-                  <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknown
-                    printer took a galley of type and scrambled it to make a
-                    type specimen book.
-                  </p>
-                  <Tab.Container id="projects-tabs" defaultActiveKey="first">
-                    <Tab.Content
-                      id="slideInUp"
-                      className={
-                        isVisible ? "animate__animated animate__slideInUp" : ""
-                      }
-                    >
-                      <Tab.Pane eventKey="first">
-                        <Row>
-                          {projects.map((project, index) => {
-                            return <ProjectCard key={index} {...project} />;
-                          })}
-                        </Row>
-                      </Tab.Pane>
-                      <Tab.Pane eventKey="section">
-                        <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Cumque quam, quod neque provident velit, rem
-                          explicabo excepturi id illo molestiae blanditiis,
-                          eligendi dicta officiis asperiores delectus quasi
-                          inventore debitis quo.
-                        </p>
-                      </Tab.Pane>
-                      <Tab.Pane eventKey="third">
-                        <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Cumque quam, quod neque provident velit, rem
-                          explicabo excepturi id illo molestiae blanditiis,
-                          eligendi dicta officiis asperiores delectus quasi
-                          inventore debitis quo.
-                        </p>
-                      </Tab.Pane>
-                    </Tab.Content>
-                  </Tab.Container>
-                </div>
-              )}
-            </TrackVisibility>
-          </Col>
-        </Row>
-      </Container>
+    <section id="projects">
+      <div className="heading">
+        <h1 style={{ textAlign: "center" }}>Project</h1>
+      </div>
+      <div className="projects-container">
+        {projectData.map((project, index) => (
+          <ProjectCard key={index} {...project} />
+        ))}
+      </div>
     </section>
   );
 };

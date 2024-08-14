@@ -1,0 +1,114 @@
+/* Reset some basic styles */
+body,
+h1,
+h2,
+h3,
+p,
+li {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+.section {
+  padding: 50px 0;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.heading h2 {
+  font-size: 36px;
+  font-weight: bold;
+  color: white;
+}
+
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-img-main {
+  flex: 1;
+  max-width: 300px;
+  margin: 20px;
+}
+
+.home-img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.about-text {
+  flex: 2;
+  max-width: 800px;
+  margin: 20px;
+  color: rgb(124, 117, 117);
+  line-height: 1.6;
+  font-size: 20px;
+}
+
+.information {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.info-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.info-box i {
+  font-size: 30px;
+  color: rgb(124, 117, 117);
+  margin-right: 10px;
+}
+
+.info-box span {
+  font-weight: bold;
+  color: rgb(124, 117, 117);
+}
+
+.info-box h3 {
+  margin-left: 10px;
+  font-size: 18px;
+  color: rgb(124, 117, 117);
+}
+
+.resume-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.resume-button:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+  }
+
+  .about-text {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .information {
+    align-items: center;
+  }
+}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");

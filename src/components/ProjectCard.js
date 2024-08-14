@@ -1,15 +1,56 @@
-import { Col } from "react-bootstrap";
+import React from "react";
+import "./project.css";
 
-export const ProjectCard = ({ title, description, imgUrl, altText }) => {
+const ProjectCard = ({
+  image,
+  title,
+  description,
+  techStack,
+  liveLink,
+  githubLink,
+}) => {
   return (
-    <Col size={12} sm={6} md={4}>
-      <div className="proj-imgbx">
-        <img src={imgUrl} alt={altText} />
-        <div className="proj-txtx">
-          <h4>{title}</h4>
-          <span>{description}</span>
-        </div>
+    <div className="project-card">
+      <img src={image} alt={title} />
+      <div className="project-name">
+        <h3 className="project-title">{title}</h3>
       </div>
-    </Col>
+      <div className="project-description">
+        <p>{description}</p>
+      </div>
+      <h4 style={{ padding: "10px" }}>Tech Stack</h4>
+      <div className="project-tech-stack1">
+        {techStack.map((tech, index) => (
+          <div className="tech-card" key={index}>
+            <img src={tech.image} alt={tech.name} />
+            <h6 className="project-tech-stack">{tech.name}</h6>
+          </div>
+        ))}
+      </div>
+      <div className="projects-button">
+        <button className="button-project-link">
+          <a
+            className="project-deployed-link"
+            href={liveLink}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Live💻
+          </a>
+        </button>
+        <button className="button-project-link">
+          <a
+            className="project-github-link"
+            href={githubLink}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub
+          </a>
+        </button>
+      </div>
+    </div>
   );
 };
+
+export default ProjectCard;

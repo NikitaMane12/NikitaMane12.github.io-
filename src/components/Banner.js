@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback, useMemo } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import headerImg from "../assets/img/nikita photo.jpeg";
+
 import { ArrowRightCircle } from "react-bootstrap-icons";
 import TrackVisibility from "react-on-screen";
 
@@ -89,13 +89,12 @@ export const Banner = () => {
               {({ isVisible }) => (
                 <div>
                   <img
-                    src={headerImg}
-                    alt="Header Img"
                     style={{
-                      width: "50%",
+                      width: "100%",
                       height: "auto",
-                      marginLeft: "200px",
                     }}
+                    src="https://www.simplilearn.com/ice9/free_resources_article_thumb/fullstack_php_js.jpg"
+                    alt=""
                   />
                 </div>
               )}
